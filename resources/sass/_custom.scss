@@ -1,0 +1,58 @@
+#app{
+    position: relative;
+    min-height: 100vh;
+}
+main{
+    padding-bottom: 15rem;
+}
+.masthead{
+    // background:$cyan;
+}
+
+.top-nav-bar{
+    background: #0692be;
+
+
+    .navbar-brand{
+        color: #fff;
+        // color: #fff;
+        font-size: 2rem;
+        .logo{
+            width: 3rem;
+        }
+
+    }
+
+    *{
+        color: #fff;
+    }
+
+    .search-form{
+        .search-input{
+            width: 20rem;
+            border-radius: 5rem;
+
+        }
+    }
+}
+
+.footer{
+    height: 10rem;
+    // background: #cacaca;
+    border-top: 1px solid #ddd;
+    // color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-link:hover{
+    // background: #9ad3ee;
+
+*{
+color: #dadada;
+}
+}
