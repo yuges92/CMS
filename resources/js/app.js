@@ -29,4 +29,19 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    data() {
+        return {
+            message:'Hello World',
+            showNavBar:false,
+        }
+    },
+    methods: {
+        showNav: function () {
+this.showNavBar=true;
+        },
+        closeNav: function () {
+this.showNavBar=false;
+
+         }
+    },
 });

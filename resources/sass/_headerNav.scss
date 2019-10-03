@@ -1,0 +1,122 @@
+.header {
+  //   background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  padding: 0.2rem 0.5rem;
+  padding-bottom: 0;
+  z-index: 999;
+  border-bottom: 1px solid #efeff1;
+
+  ul {
+    list-style: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    // padding: 0 1rem;
+
+    .navbar-brand {
+      //   font-size: 2rem;
+      //   color: $primary-color;
+      //   font-family: 'Pacifico', cursive;
+      width: 7rem;
+    }
+    .menu-container {
+      .navbar-toggler {
+        background: none;
+        border: none;
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: 100;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: #000;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+
+      .navbar-nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        position: fixed;
+        list-style: none;
+        overflow: auto;
+        right: 0;
+        height: 100vh;
+        width: 18rem;
+        background-color: #fff;
+        border-left: 1px solid #efeff1;
+        border-radius: 5rem 0 0rem 0rem;
+        transform: translateX(100%);
+
+        transition: transform 0.262s ease-out;
+        &.active {
+          transform: translateX(0);
+        }
+        .toggler-wrapper {
+          display: flex;
+          justify-content: flex-end;
+
+          .navbar-toggler {
+            padding: 1rem;
+
+            &:hover {
+              padding-right: 0.5rem;
+              color: #0288d1;
+            }
+          }
+        }
+        .nav-item {
+          display: flex;
+          .nav-link {
+            padding: 1rem 5rem;
+            padding-left: 2rem;
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+            // color: #fafafa;
+            color: $primary-color;
+
+            &:hover {
+              //   background: #fafafa;
+              color: #0288d1;
+              padding-left: 5rem;
+              //   font-size: 1.05rem;
+            }
+          }
+        }
+      }
+
+      .social-networks {
+        position: relative;
+        // color: $primary-color;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        // margin-top: 10rem;
+        .link {
+          padding: 1rem;
+          color: #000;
+
+          font-size: 1.5rem;
+          &:hover {
+            color: #0288d1;
+          }
+        }
+      }
+
+      &.active {
+        transform: translateX(0);
+      }
+    }
+  }
+}

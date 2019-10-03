@@ -1,0 +1,36 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+
+  }
+}
+
+body {
+  // position: relative;
+  min-height: 100vh;
+  font-family: $font-family-sans-serif;
+}
+
+.main {
+  position: relative;
+  top: 4.5rem;
+  min-height: 90vh;
+  margin-bottom: 10rem;
+}
+
+@mixin easy-in-easy-out {
+}

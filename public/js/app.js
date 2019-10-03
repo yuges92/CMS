@@ -49357,7 +49357,21 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: function data() {
+    return {
+      message: 'Hello World',
+      showNavBar: false
+    };
+  },
+  methods: {
+    showNav: function showNav() {
+      this.showNavBar = true;
+    },
+    closeNav: function closeNav() {
+      this.showNavBar = false;
+    }
+  }
 });
 
 /***/ }),

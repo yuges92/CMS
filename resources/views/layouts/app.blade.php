@@ -14,52 +14,62 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
     <div id="app">
-        <header>
+        <header class="header">
+            <nav class="navbar">
+                <div>
 
-        <nav class="navbar navbar-expand-md top-nav-bar shadow-sm">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    {{-- <img src="https://www2.le.ac.uk/staff/announcements/yammer%20logo.png/image" --}}
-                        {{-- src="https://www.logospng.com/images/21/getting-fit-at-home-with-yogaia-jacintaz3-21463.png" --}}
-                        {{-- class="logo" alt=""> --}}
+                    <a class="navbar-brand" href="/">
+                        {{-- <img
+                            src="https://www2.le.ac.uk/staff/announcements/yammer%20logo.png/image"
+                            src="https://www.logospng.com/images/21/getting-fit-at-home-with-yogaia-jacintaz3-21463.png"
+                            class="logo" alt=""> --}}
+                        <img src="{{asset('images/logo.png')}}" alt="">
 
-                    {{-- <i class="fab fa-hacker-news-square"></i> --}}
-                    <span>{{config('app.name')}}</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="{{ __('Toggle navigation') }}">
-                    <i class="fas fa-bars"></i>
-                </button>
+                        {{-- <i class="fab fa-hacker-news-square"></i> --}}
+                        {{-- <span>{{config('app.name')}}</span> --}}
+                    </a>
+                </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                <div class="menu-container">
+                    <div>
 
-                    </ul>
-                    {{-- <div class="search-form">
-                        <form class="">
-                            <input class="form-control search-input" type="search" placeholder="Search"
+                        <button class="navbar-toggler" type="button" @click="showNav" v-show="!showNavBar">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+
+                        {{-- <div class="search-form">
+                            <form class="">
+                                <input class="form-control search-input" type="search" placeholder="Search"
                                 aria-label="Search">
-                        </form>
-                    </div> --}}
+                            </form>
+                        </div> --}}
+                    </div>
 
 
                     <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav">
+                    <div class="navbar-nav-container" :class="{active:showNavBar }">
+
+                    <ul class="nav-items">
+                        <div class="toggler-wrapper">
+                            <button class="navbar-toggler" type="button" @click="closeNav">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="/">
-                            <i class="fas fa-search"></i>
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-search"></i>
                             </a>
                         </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="/blogs">
@@ -76,11 +86,11 @@
                         </li>
 
                         <li class="nav-item">
-                                <a class="nav-link" href="/programming">
-                                    <i class="fas fa-code"></i>
-                                    <span>{{ __('Programming') }}</span>
-                                </a>
-                            </li>
+                            <a class="nav-link" href="/programming">
+                                <i class="fas fa-code"></i>
+                                <span>{{ __('Programming') }}</span>
+                            </a>
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link" href="/about">
@@ -125,12 +135,20 @@
                         </li>
                         @endguest
                     </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+                            <ul class="social-networks">
+                                <li class="nav-item"><a class="link" href=""><i class="fab fa-instagram"></i></a></li>
+                                <li class="nav-item"><a class="link" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li class="nav-item"><a class="link" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li class="nav-item"><a class="link" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="nav-item"><a class="link" href=""><i class="fab fa-pinterest"></i></a></li>
+                            </ul>
 
-        <main class="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
             @yield('content')
         </main>
 
@@ -140,7 +158,9 @@
     </div>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script>
 
+    </script>
 </body>
 
 </html>

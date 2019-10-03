@@ -1,70 +1,105 @@
 @extends('layouts.app')
 
 @section('content')
-<header class="masthead text-center py-5">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-        <h1 class="mb-5">Welcome to {{config('app.name')}}</h1>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Similique quaerat dolorum culpa nulla possimus sed, ea doloribus sunt mollitia, quae ratione ipsum pariatur.
-            In, neque error? Velit facilis pariatur vitae?
-        </p>
-        </div>
-        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
-            <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
-              </div>
-              <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </header>
 
-  <section class="features-icons bg-light text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-screen-desktop m-auto text-primary"></i>
-            </div>
-            <h3>Fully Responsive</h3>
-            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-layers m-auto text-primary"></i>
-            </div>
-            <h3>Bootstrap 4 Ready</h3>
-            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-            <div class="features-icons-icon d-flex">
-              <i class="icon-check m-auto text-primary"></i>
-            </div>
-            <h3>Easy to Use</h3>
-            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="home">
 
-  <section class="container">
-      <h2>Latest Blogs</h2>
+    <header class="masthead">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="heading">
+                <h1 class="mb-5">Hi, Welcome. </h1>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ea accusantium velit suscipit doloribus,
+                    nam nisi numquam nesciunt ducimus maxime reprehenderit iure sunt itaque iste ab quas ipsam.
+                    Soluta, aperiam incidunt?
+                </p>
+            </div>
+            <form class="form" v-on:submit.prevent>
+                <div class="inputs">
+                    <input type="email" class="input" placeholder="Enter your email...">
+                </div>
+                <div class="btns">
+                    <button type="submit" class="btn btn-submit">Sign up!</button>
+                </div>
+            </form>
+        </div>
+    </header>
 
-  </section>
+    <section class="features">
+        <a class="feature" href="/blogs">
+            <div class="icon">
+                <i class="fas fa-blog"></i>
+            </div>
+            <h3>Personal Blogs</h3>
+            <p class="">My personal blogs. This is where I share my personal and things I love</p>
+        </a>
+        <a class="feature" href="/programming">
+            <div class="icon">
+                <i class="fas fa-code"></i>
+            </div>
+            <h3>Programming Blogs</h3>
+            <p class="">If you love programming then this blogs are for you.</p>
+        </a>
+        <a class="feature" href="/projects">
+            <div class="icon">
+                <i class="fas fa-feather-alt"></i>
+            </div>
+            <h3>Recent Works</h3>
+            <p class="lead mb-0">My recent works including personal and professional projects</p>
+        </a>
+    </section>
+
+    <section class="latest-blogs">
+        <h2>Latest Blogs</h2>
+
+        <div class="blogs">
+            @for ($i = 1; $i < 6; $i++) <div class="blog">
+                <div class="blog-header">
+                    <a href="#">
+                        <img class=""
+                            src="https://pixabay.com/get/55e3d3404d51b114b2d9867fc12c337b1c22dfe05451704a732d7ddc/home-office-336373.jpg"
+                            alt="">
+                    </a>
+                </div>
+                <div class="blog-body">
+                    <a class="btn btn-primary" href="#">
+                        <h3>Lorem ipsum dolor sit amet Blog {{$i}}</h3>
+                    </a>
+                    <small>
+                        <span class="text">Date Published: </span> <span class="date">01/10/2019</span>
+                    </small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem
+                        expedita laborum at voluptate.</p>
+                </div>
+                <div class="blog-footer">
+
+                    <div>
+                        <i class="fas fa-tags"></i>
+                        <a href="">Category 1</a>
+                        <a href="">Category 2</a>
+                        <a href="">Category 3</a>
+                    </div>
+                    <div class="comment">
+                        <i class="fas fa-comments"></i>
+                        <a href="">2 Comments</a>
+                    </div>
+                </div>
+        </div>
+        @endfor
+
+        <div>
+           <a href=""> More Blogs</a>
+        </div>
+</div>
+
+</section>
+
+<section class="social-media-activities">
+<h2>Latest Social Media Activities</h2>
+<h3>Follow Me</h3>
+</section>
+</div>
+
 @endsection
