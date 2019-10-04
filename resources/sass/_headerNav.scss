@@ -30,7 +30,7 @@
       .navbar-toggler {
         background: none;
         border: none;
-        color: $primary-color;
+        color: #565454;
         font-size: 1.5rem;
         font-weight: 100;
         cursor: pointer;
@@ -87,7 +87,8 @@
 
             &:hover {
               //   background: #fafafa;
-              color: #0288d1;
+            color: $secondary-color;
+
               padding-left: 5rem;
               //   font-size: 1.05rem;
             }

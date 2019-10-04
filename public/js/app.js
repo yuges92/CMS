@@ -49361,7 +49361,8 @@ var app = new Vue({
   data: function data() {
     return {
       message: 'Hello World',
-      showNavBar: false
+      showNavBar: false,
+      currentYear: new Date().getFullYear()
     };
   },
   methods: {

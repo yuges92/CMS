@@ -13,9 +13,8 @@ img {
 a {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
-
+  color: $blue;
   &:hover {
-
   }
 }
 
@@ -23,6 +22,7 @@ body {
   // position: relative;
   min-height: 100vh;
   font-family: $font-family-sans-serif;
+//   background-color: #eaf0f6;
 }
 
 .main {
@@ -33,4 +33,33 @@ body {
 }
 
 @mixin easy-in-easy-out {
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+  .social-networks {
+    list-style: none;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    // margin-top: 10rem;
+    .link {
+      padding: 1rem;
+      color: #dfdfdf;
+
+      font-size: 1.5rem;
+      &:hover {
+        color: #0288d1;
+      }
+    }
+  }
+
+  .copy-right{
+    color: #dfdfdf;
+
+}
 }

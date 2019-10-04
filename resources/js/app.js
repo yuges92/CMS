@@ -33,6 +33,7 @@ const app = new Vue({
         return {
             message:'Hello World',
             showNavBar:false,
+            currentYear:new Date().getFullYear(),
         }
     },
     methods: {

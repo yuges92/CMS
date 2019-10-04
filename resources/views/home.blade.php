@@ -3,12 +3,11 @@
 @section('content')
 
 <div class="home">
-
     <header class="masthead">
         <div class="overlay"></div>
         <div class="content">
             <div class="heading">
-                <h1 class="mb-5">Hi, Welcome. </h1>
+                <h1 class="mb-5">Hi, Welcome! </h1>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Ea accusantium velit suscipit doloribus,
@@ -16,14 +15,19 @@
                     Soluta, aperiam incidunt?
                 </p>
             </div>
-            <form class="form" v-on:submit.prevent>
-                <div class="inputs">
-                    <input type="email" class="input" placeholder="Enter your email...">
-                </div>
-                <div class="btns">
-                    <button type="submit" class="btn btn-submit">Sign up!</button>
-                </div>
-            </form>
+            <div>
+
+                <form class="form" v-on:submit.prevent>
+                    <h2>Subscribe</h2>
+                    <small>Subscribe to get latest updates!</small>
+                    <div class="inputs">
+                        <input type="email" class="input" placeholder="Enter your email...">
+                    </div>
+                    <div class="btns">
+                        <button type="submit" class="btn btn-submit">Subscribe!</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -55,25 +59,26 @@
         <h2>Latest Blogs</h2>
 
         <div class="blogs">
-            @for ($i = 1; $i < 6; $i++) <div class="blog">
+            @for ($i = 1; $i < 6; $i++)
+            <div class="blog">
                 <div class="blog-header">
                     <a href="#">
                         <img class=""
-                            src="https://pixabay.com/get/55e3d3404d51b114b2d9867fc12c337b1c22dfe05451704a732d7ddc/home-office-336373.jpg"
+                    src="{{asset('images/diary-blog.jpg')}}"
                             alt="">
                     </a>
                 </div>
                 <div class="blog-body">
-                    <a class="btn btn-primary" href="#">
+                    <a class="" href="#">
                         <h3>Lorem ipsum dolor sit amet Blog {{$i}}</h3>
                     </a>
                     <small>
                         <span class="text">Date Published: </span> <span class="date">01/10/2019</span>
                     </small>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem
-                        expedita laborum at voluptate.</p>
+                    {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem
+                        expedita laborum at voluptate.</p> --}}
                 </div>
-                <div class="blog-footer">
+                {{-- <div class="blog-footer">
 
                     <div>
                         <i class="fas fa-tags"></i>
@@ -85,21 +90,21 @@
                         <i class="fas fa-comments"></i>
                         <a href="">2 Comments</a>
                     </div>
-                </div>
+                </div> --}}
         </div>
         @endfor
 
-        <div>
-           <a href=""> More Blogs</a>
-        </div>
-</div>
+    </div>
+    <a href="/blogs" class="more-blog-btn"> More Blogs</a>
 
 </section>
 
-<section class="social-media-activities">
-<h2>Latest Social Media Activities</h2>
+{{-- <section class="social-media-activities">
+<h2>Latest Social Media</h2>
 <h3>Follow Me</h3>
-</section>
+
+<div></div>
+</section> --}}
 </div>
 
 @endsection
