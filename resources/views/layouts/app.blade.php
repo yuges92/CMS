@@ -13,9 +13,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap" rel="stylesheet">
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">    <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
@@ -31,14 +29,7 @@
                 <div>
 
                     <a class="navbar-brand" href="/">
-                        {{-- <img
-                            src="https://www2.le.ac.uk/staff/announcements/yammer%20logo.png/image"
-                            src="https://www.logospng.com/images/21/getting-fit-at-home-with-yogaia-jacintaz3-21463.png"
-                            class="logo" alt=""> --}}
                         <img src="{{asset('images/logo.png')}}" alt="">
-
-                        {{-- <i class="fab fa-hacker-news-square"></i> --}}
-                        {{-- <span>{{config('app.name')}}</span> --}}
                     </a>
                 </div>
 
@@ -119,25 +110,15 @@
                             @endif
                             @else
 
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('admin') }}"><i class="fas fa-user"></i>
+                                        <span>{{ Auth::user()->firstname }}</span></a>
+                                </li>
 
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->firstname }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                                        style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                                <li class="nav-item">
+                                        <a class="nav-link" href="{{ route('logout') }}"><i class="fas fa-sign-out-alt"></i>
+                                            <span>Logout</span></a>
+                                    </li>
                             @endguest
                         </ul>
                         <ul class="social-networks">

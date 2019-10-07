@@ -24,10 +24,10 @@
                 </a>
             </div>
             <div class="blog-body">
-                <a class="" href="#">
+                <a class="" href="/blogs/1">
                     <h3>Lorem ipsum dolor sit amet Blog {{$i}}</h3>
                 </a>
-                <small>
+                <small class="date-container">
                     <span class="text">Date Published: </span> <span class="date">01/10/2019</span>
                 </small>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem

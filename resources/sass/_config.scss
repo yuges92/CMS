@@ -17,6 +17,9 @@ a {
   &:hover {
   }
 }
+button{
+    font-family: $font-family-sans-serif;
+}
 
 body {
   // position: relative;
@@ -27,7 +30,7 @@ body {
 
 .main {
   position: relative;
-  top: 4.5rem;
+  top: 4.3rem;
   min-height: 90vh;
   margin-bottom: 10rem;
 }

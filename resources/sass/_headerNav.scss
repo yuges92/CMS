@@ -19,12 +19,27 @@
     width: 100%;
     align-items: center;
     // padding: 0 1rem;
-
+    padding: 0.5rem;
     .navbar-brand {
       //   font-size: 2rem;
       //   color: $primary-color;
       //   font-family: 'Pacifico', cursive;
+      font-size: 1.125rem;
+      line-height: inherit;
+      white-space: nowrap;
       width: 7rem;
+      display: inline-block;
+      padding-top: 0.32rem;
+      padding-bottom: 0.32rem;
+      margin-right: 1rem;
+      font-size: 1.125rem;
+      line-height: inherit;
+      white-space: nowrap;
+
+    img{
+            vertical-align: middle;
+    border-style: none;
+    }
     }
     .menu-container {
       .navbar-toggler {

@@ -6,3 +6,4 @@ Route::get('/', function () {
 });
 
 Route::resource('blogs', 'Admin\BlogController');
+Route::get('/', 'Admin\BlogController@index')->name('admin');
