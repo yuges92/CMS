@@ -8,13 +8,14 @@
         <div class="login-form">
             <h1>Sign in!</h1>
             <h2>Hello there!, Welcome back</h2>
-            <form action="" class="form">
+            <form method="POST" action="{{ route('login') }}">
+
                 <div class="input-container">
                     <label class="input-label" for="">Username/Email</label>
                     <div class="icon-input-group">
 
                         <i class="fas fa-at"></i>
-                        <input class="input-field" type="text" placeholder="Username">
+                        <input class="input-field" type="text" placeholder="Username" name="email">
                     </div>
                 </div>
                 <div class="input-container">
@@ -22,14 +23,14 @@
                     <div class="icon-input-group">
 
                         <i class="fas fa-lock"></i>
-                        <input class="input-field" type="password" placeholder="Password">
+                        <input class="input-field" type="password" placeholder="Password" name="password">
                     </div>
                 </div>
 
                 <div class="btn-container">
                     <button class="login-btn" type="submit">Login</button>
                     <a href="{{ route('password.request') }}" class="btn">Forgot Password?</a>
-                    <div >
+                    <div>
 
                     </div>
                 </div>
