@@ -8,7 +8,7 @@
         <div class="login-form">
             <h1>Sign in!</h1>
             <h2>Hello there!, Welcome back</h2>
-            <form method="POST" action="{{ route('login') }}">
+            <form method="POST" action="{{ route('login') }}" class="form">
 
                 <div class="input-container">
                     <label class="input-label" for="">Username/Email</label>
