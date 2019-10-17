@@ -46,7 +46,7 @@
             <h3>Programming Blogs</h3>
             <p class="">If you love programming then this blogs are for you.</p>
         </a>
-        <a class="feature" href="/projects">
+        <a class="feature" href="/portfolios">
             <div class="icon">
                 <i class="fas fa-images"></i>
             </div>
