@@ -67,31 +67,38 @@
                             </li>
 
 
+
                             <li class="nav-item">
                                 <a class="nav-link" href="/blogs">
                                     <i class="fas fa-blog"></i>
-                                    <span>{{ __('My Blogs') }}</span>
+                                    <span> {{ __('My Blogs') }}</span>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/programming">
+                                    <i class="fas fa-code"></i>
+                                    <span> {{ __('Programming') }}</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/portfolios">
+                                    <i class="fas fa-images"></i>
+                                    <span> {{ __('Portfolios') }}</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" href="https://github.com/yuges92" target="_blank">
                                     <i class="fab fa-github"></i>
-                                    <span>{{ __('Github') }}</span>
+                                    <span> {{ __('Github') }}</span>
                                 </a>
                             </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="/programming">
-                                    <i class="fas fa-code"></i>
-                                    <span>{{ __('Programming') }}</span>
-                                </a>
-                            </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">
                                     <i class="fas fa-info-circle"></i>
-                                    <span>{{ __('About') }}</span>
+                                    <span> {{ __('About') }}</span>
                                 </a>
                             </li>
 

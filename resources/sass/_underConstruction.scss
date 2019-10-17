@@ -1,0 +1,55 @@
+.under-construction {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  background: url("../images/under-construction.jpg") center;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.43);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  padding: 0.4rem;
+
+  .content {
+    z-index: 3;
+    // background: #7474744d;
+    padding: 3rem 1rem;
+    // width: 100%;
+img{
+    max-width: 30rem;
+}
+    border-radius: 1rem;
+    i {
+      font-size: 5rem;
+      color: #ffd000;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #ffd000;
+      // color: $red;
+      // text-shadow: 0px 1px 1px #fff;
+      text-transform: uppercase;
+      // margin-bottom: 0.5rem;
+    }
+    p {
+      color: #fae06d;
+      font-size: 1.1rem;
+      // margin-bottom: 1rem;
+    }
+
+    h2 {
+      text-shadow: 1px 1px 1px #000;
+    }
+  }
+}

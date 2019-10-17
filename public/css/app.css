@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);*,
+@import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);@import url(https://fonts.googleapis.com/css?family=Nunito:400,600,800&display=swap);*,
 ::after,
 ::before {
   margin: 0;
@@ -17,12 +17,12 @@ a {
 }
 
 button {
-  font-family: "Lora", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
   min-height: 100vh;
-  font-family: "Lora", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .main {
@@ -69,6 +69,7 @@ body {
   padding-bottom: 0;
   z-index: 999;
   border-bottom: 1px solid #efeff1;
+  box-shadow: 0 0px 3px 0 #0000001a;
 }
 
 .header ul {
@@ -331,7 +332,7 @@ body {
 }
 
 .home .features .feature:hover {
-  background: #e7e7e7;
+  background: #c5c5c5;
 }
 
 .home .features .feature:hover .icon i {
@@ -881,6 +882,61 @@ body {
 
 .login-page .body .form .btn-container .login-btn:hover {
   background-color: #0088cc;
+}
+
+.under-construction {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  background: url(/images/under-construction.jpg?08c4de8e75a07bdf49bd15b787405e4e) center;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.under-construction .overlay {
+  background-color: rgba(0, 0, 0, 0.43);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.under-construction .content {
+  z-index: 3;
+  padding: 3rem 1rem;
+  border-radius: 1rem;
+}
+
+.under-construction .content img {
+  max-width: 30rem;
+}
+
+.under-construction .content i {
+  font-size: 5rem;
+  color: #ffd000;
+  margin-bottom: 0.5rem;
+}
+
+.under-construction .content h1 {
+  font-size: 2rem;
+  color: #ffd000;
+  text-transform: uppercase;
+}
+
+.under-construction .content p {
+  color: #fae06d;
+  font-size: 1.1rem;
+}
+
+.under-construction .content h2 {
+  text-shadow: 1px 1px 1px #000;
 }
 
 .footer {

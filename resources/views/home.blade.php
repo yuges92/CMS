@@ -48,9 +48,9 @@
         </a>
         <a class="feature" href="/projects">
             <div class="icon">
-                <i class="fas fa-feather-alt"></i>
+                <i class="fas fa-images"></i>
             </div>
-            <h3>Recent Works</h3>
+            <h3>Portfolios</h3>
             <p class="lead mb-0">My recent works including personal and professional projects</p>
         </a>
     </section>
