@@ -154,12 +154,15 @@
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      text-align: center;
+      text-decoration: underline;
+      text-underline-position: under;
     }
 
     .blog {
       border-radius: 0.5rem;
-      background: #f7f7f7;
-      // box-shadow: 1px 1px 1px 1px red;
+    //   background: #f7f7f7;
+      box-shadow: 2px 3px 10px 1px #f3f1f1;
       margin-bottom: 1rem;
       border: 1px solid #e2e2e2;
       overflow: hidden;
@@ -208,6 +211,7 @@
 
     .more-blog-btn {
       margin: auto;
+      margin-top: 1rem;
       background: $red;
       color: #fff;
       padding: 1rem 2rem;

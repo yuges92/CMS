@@ -1,5 +1,5 @@
 .single-blog {
-  background: $red;
+//   background: $red;
   background: #f1f6ff;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -9,10 +9,11 @@
     padding: 3rem 1rem;
     background: #fff;
   }
-
   &-body {
     display: flex;
     flex-direction: column;
+    .blog{
+
     .body-container {
         margin: 0 1rem;
         margin: 1rem;
@@ -32,6 +33,7 @@
       }
     }
   }
+}
 
   .comments {
     display: flex;

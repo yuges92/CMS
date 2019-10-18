@@ -28,16 +28,20 @@
     .content {
       z-index: 3;
       color: #e4e4e4;
+      text-align: center;
     }
   }
-
-  .blogs {
+.blogs-container{
     padding: 1rem;
     h2 {
       margin-bottom: 1rem;
+      text-decoration: underline;
+      text-underline-position: under;
     }
+
+  .blogs {
     .blog {
-      background: #f7f7f7;
+    //   background: #f7f7f7;
       margin-bottom: 2em;
       color: #33475b;
       border-radius: 0.25rem;
@@ -48,6 +52,8 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      box-shadow: 2px 3px 10px 1px #f3f1f1;
+
       &-header {
         height: 13rem;
         overflow: hidden;
@@ -118,6 +124,11 @@
       }
     }
   }
+
+  .blog-aside{
+      display: none;
+  }
+}
 
   .pagination {
     list-style: none;

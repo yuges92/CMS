@@ -31,27 +31,29 @@
         </div>
     </header>
 
+    <div class="home-body">
+
     <section class="features">
         <a class="feature" href="/blogs">
             <div class="icon">
                 <i class="fas fa-blog"></i>
             </div>
             <h3>Personal Blogs</h3>
-            <p class="">My personal blogs. This is where I share my personal and things I love</p>
+            {{-- <p class="">My personal blogs. This is where I share my personal and things I love</p> --}}
         </a>
         <a class="feature" href="/programming">
             <div class="icon">
                 <i class="fas fa-code"></i>
             </div>
             <h3>Programming Blogs</h3>
-            <p class="">If you love programming then this blogs are for you.</p>
+            {{-- <p class="">If you love programming then this blogs are for you.</p> --}}
         </a>
         <a class="feature" href="/portfolios">
             <div class="icon">
                 <i class="fas fa-images"></i>
             </div>
             <h3>Portfolios</h3>
-            <p class="lead mb-0">My recent works including personal and professional projects</p>
+            {{-- <p class="lead mb-0">My recent works including personal and professional projects</p> --}}
         </a>
     </section>
 
@@ -59,7 +61,7 @@
         <h2>Latest Blogs</h2>
 
         <div class="blogs">
-            @for ($i = 1; $i < 6; $i++)
+            @for ($i = 1; $i < 5; $i++)
             <div class="blog">
                 <div class="blog-header">
                     <a href="#">
@@ -96,6 +98,7 @@
 
     </div>
     <a href="/blogs" class="more-blog-btn"> More Blogs</a>
+</div>
 
 </section>
 

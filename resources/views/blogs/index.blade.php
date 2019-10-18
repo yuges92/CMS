@@ -15,41 +15,77 @@
     </header>
 
 
-    <div class="blogs">
+    <div class="blogs-container">
+
         <h2>Latest Blogs</h2>
-        @for ($i = 1; $i <=10; $i++) <div class="blog">
-            <div class="blog-header">
-                <a href="#">
-                    <img class="" src="{{asset('images/diary-blog.jpg')}}" alt="">
-                </a>
-            </div>
-            <div class="blog-body">
-                <a class="" href="/blogs/1">
-                    <h3>Lorem ipsum dolor sit amet Blog {{$i}}</h3>
-                </a>
-                <small class="date-container">
-                    <span class="text">Date Published: </span> <span class="date">01/10/2019</span>
-                </small>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem
-                    expedita laborum at voluptate.</p>
-            </div>
-            <div class="blog-footer">
 
-                <div class="tags">
-                    <i class="fas fa-tags"></i>
+        <div class="blog-cats">
+
+
+            <div class="blogs">
+                @for ($i = 1; $i <=10; $i++) <div class="blog">
+                    <div class="blog-header">
+                        <a href="#">
+                            <img class="" src="{{asset('images/diary-blog.jpg')}}" alt="">
+                        </a>
+                    </div>
+                    <div class="blog-body">
+                        <a class="" href="/blogs/1">
+                            <h3>Lorem ipsum dolor sit amet Blog {{$i}}</h3>
+                        </a>
+                        <small class="date-container">
+                            <span class="text">Date Published: </span> <span class="date">01/10/2019</span>
+                        </small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem
+                            expedita laborum at voluptate.</p>
+                    </div>
+                    <div class="blog-footer">
+
+                        <div class="tags">
+                            <i class="fas fa-tags"></i>
+                            <ul>
+                                <li><a href="">Category 1</a></li>
+                                <li><a href="">Category 2</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="comment">
+                            <i class="fas fa-comments"></i>
+                            <a href="">2 Comments</a>
+                        </div>
+                    </div>
+            </div>
+            @endfor
+
+
+
+        </div>
+
+        <aside class="blog-aside">
+            <div>
+                <form action="">
+                    <div>
+                        <input type="text" placeholder="Search">
+                    </div>
+                </form>
+
+            </div>
+            <div class="category-container">
+
+                <h3>Blog Categories</h3>
+                <div>
                     <ul>
-                        <li><a href="">Category 1</a></li>
-                        <li><a href="">Category 2</a></li>
+                        <li>Laravel</li>
+                        <li>Travel</li>
+                        <li>Blogging</li>
+                        <li>Blogging</li>
                     </ul>
-
-                </div>
-                <div class="comment">
-                    <i class="fas fa-comments"></i>
-                    <a href="">2 Comments</a>
                 </div>
             </div>
+        </aside>
     </div>
-    @endfor
+
+
 
 </div>
 
