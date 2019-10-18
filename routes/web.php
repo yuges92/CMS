@@ -23,7 +23,7 @@ Route::get('/logout', function () {
 Auth::routes(['verify' => true, 'register' => false]);
 
 Route::get('/', 'HomeController@index')->name('home');
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index');
 Route::resource('/blogs', 'BlogController');
 Route::resource('/portfolios', 'PortfolioController');
 Route::resource('/programming', 'ProgrammingController');
