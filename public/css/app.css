@@ -790,17 +790,18 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  max-width: 30rem;
 }
 
 .login-page .body .login-form {
-  background: #fafafa;
   border: 1px solid #e9e9e9;
-  border-radius: 10px;
-  padding: 3rem 1rem;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  box-shadow: 0 6px 20px -15px rgba(173, 32, 32, 0.2);
 }
 
 .login-page .body h1 {
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .login-page .body .form {
@@ -823,12 +824,11 @@ body {
 .login-page .body .form .input-container .icon-input-group {
   display: flex;
   align-items: center;
-  background: #e6e6e6;
-  color: #949090;
+  background: #fff;
+  color: #000;
   padding-left: 1rem;
-  border: 1px solid #fafafa;
+  border: 2px solid #E6E7EC;
   border-radius: 5rem;
-  border: none;
 }
 
 .login-page .body .form .input-container .icon-input-group .input-field {
@@ -847,7 +847,7 @@ body {
 }
 
 .login-page .body .form .input-container .icon-input-group:focus-within {
-  box-shadow: inset 0px 0px 5px 1px #5a5a5a;
+  box-shadow: inset 0px 0px 1px 2px #5a5a5a;
 }
 
 .login-page .body .form .input-container .icon-input-group:focus-within i {

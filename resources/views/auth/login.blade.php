@@ -4,12 +4,12 @@
 <div class="login-page">
 
     <div class="body">
+        <h2>Welcome back</h2>
 
         <div class="login-form">
             <h1>Sign in!</h1>
-            <h2>Hello there!, Welcome back</h2>
             <form method="POST" action="{{ route('login') }}" class="form">
-@csrf
+                @csrf
                 <div class="input-container">
                     <label class="input-label" for="">Username/Email</label>
                     <div class="icon-input-group">
