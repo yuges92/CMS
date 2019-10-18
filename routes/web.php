@@ -20,7 +20,7 @@ Route::get('/logout', function () {
     return redirect('/login');
 })->name('logout');
 
-Auth::routes(['verify' => true]);
+Auth::routes(['verify' => true, 'register' => false]);
 
 Route::get('/', 'HomeController@index')->name('home');
 // Route::get('/home', 'HomeController@index')->name('home');

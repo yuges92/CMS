@@ -14,7 +14,7 @@
     <title>{{config('app.name')}} @yield('subTitle')</title>
     <!-- Bootstrap Core CSS -->
     {{-- <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> --}}
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -45,6 +45,8 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
+    <div id="app">
+
     <div id="main-wrapper">
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
@@ -154,6 +156,7 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
+</div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
@@ -175,12 +178,15 @@
     <!--stickey kit -->
     <script src="{{asset('theme/plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
     <script src="{{asset('theme/plugins/sparkline/jquery.sparkline.min.js')}}"></script>
-    <!--Custom JavaScript -->
+
     <script src="{{asset('theme/js/custom.min.js')}}"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
+
     <script src="{{asset('theme/plugins/styleswitcher/jQuery.style.switcher.js')}}"></script>
+    <script src="{{asset('js/admin.js')}}"></script>
+
     @stack('js')
 
 </body>
